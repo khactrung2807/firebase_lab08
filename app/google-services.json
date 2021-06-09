@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "955845455624",
+    "project_id": "fir-face08",
+    "storage_bucket": "fir-face08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955845455624:android:db43f5d597b105741286bd",
+        "android_client_info": {
+          "package_name": "com.example.lab08_firebase_lythuyet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955845455624-9jkffq3so62btrpbpko0qsnbaq0d5o2k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnt9sjqv4HvUwdihnFT_nqlvroCvYHaLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955845455624-9jkffq3so62btrpbpko0qsnbaq0d5o2k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

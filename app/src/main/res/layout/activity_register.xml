@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREATE NEW ACCOUNT"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="80dp"></TextView>
+    <ImageView
+        android:id="@+id/imgRegis"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:src="@drawable/cuoi"
+        app:layout_constraintTop_toTopOf="@id/tvCreate"
+        app:layout_constraintBottom_toBottomOf="@id/tvCreate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvCreate"
+        android:layout_marginRight="55dp"></ImageView>
+    <EditText
+        android:id="@+id/edtName3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your name"
+        app:layout_constraintTop_toBottomOf="@id/tvCreate"
+        android:layout_marginTop="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"></EditText>
+    <EditText
+        android:id="@+id/edtEmail3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        app:layout_constraintTop_toBottomOf="@id/edtName3"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"></EditText>
+    <EditText
+        android:id="@+id/edtPass3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/edtEmail3"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"></EditText>
+    <EditText
+        android:id="@+id/edtPass4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/edtPass3"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"></EditText>
+
+    <Button
+        android:id="@+id/btn_SignInC"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/radius_btn"
+        android:text="REGISTER"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="#EF77B0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtPass4" />
+
+    <TextView
+        android:id="@+id/tvRegisGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER WITH GOOGLE"
+        android:textSize="15sp"
+        android:textColor="#2D58F3"
+        android:drawableLeft="@drawable/ggicon"
+        android:drawablePadding="15dp"
+        app:layout_constraintStart_toStartOf="@+id/btn_SignInC"
+        app:layout_constraintEnd_toEndOf="@id/btn_SignInC"
+        app:layout_constraintTop_toBottomOf="@id/btn_SignInC"
+        android:layout_marginTop="55dp"></TextView>
+
+    <View
+        android:id="@+id/viewBottomB"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/viewtop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRegisGoogle"></View>
+
+    <TextView
+        android:id="@+id/tvAlready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:textSize="17sp"
+        app:layout_constraintTop_toTopOf="@id/viewBottomB"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="55dp"></TextView>
+    <TextView
+        android:id="@+id/tvSignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/viewBottomB"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toEndOf="@id/tvAlready"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="55dp"></TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

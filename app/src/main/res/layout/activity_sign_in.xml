@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgHappy"
+            android:layout_width="87dp"
+            android:layout_height="99dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/cuoi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+        <ImageView
+            android:id="@+id/imgNormal"
+            android:layout_width="93dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="110dp"
+            android:src="@drawable/nin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+        <ImageView
+            android:id="@+id/imgSad"
+            android:layout_width="87dp"
+            android:layout_height="91dp"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/buon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></ImageView>
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="18sp"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgSad"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="60dp"></EditText>
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type password"
+        android:textSize="18sp"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:drawableRight="@drawable/mat"
+        android:drawablePadding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtEmail"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"></EditText>
+    <Button
+        android:id="@+id/btn_SignInB"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/radius_btn"
+        android:text="SIGN IN"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="#EF77B0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtPassword"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:id="@+id/tvForgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORGOT PASSWORD?"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/btn_SignInB"
+        app:layout_constraintEnd_toEndOf="@id/btn_SignInB"
+        app:layout_constraintTop_toBottomOf="@id/btn_SignInB"
+        android:layout_marginTop="5dp"></TextView>
+    <TextView
+        android:id="@+id/tvGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN WITH GOOGLE"
+        android:textSize="15sp"
+        android:textColor="#2D58F3"
+        android:drawableLeft="@drawable/ggicon"
+        android:drawablePadding="15dp"
+        app:layout_constraintStart_toStartOf="@+id/btn_SignInB"
+        app:layout_constraintEnd_toEndOf="@id/btn_SignInB"
+        app:layout_constraintTop_toBottomOf="@id/tvForgotPass"
+        android:layout_marginTop="35dp"></TextView>
+
+    <View
+        android:id="@+id/viewBottomB"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/viewtop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvGoogle"></View>
+
+    <TextView
+        android:id="@+id/tvNotAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do not have an account?"
+        android:textSize="17sp"
+        app:layout_constraintTop_toTopOf="@id/viewBottomB"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="55dp"></TextView>
+    <TextView
+        android:id="@+id/tvRegisterHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register here"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/viewBottomB"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toEndOf="@id/tvNotAcc"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="55dp"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
