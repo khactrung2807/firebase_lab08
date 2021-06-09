@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab08_Firebase_LyThuyet">
         <activity android:name="com.example.firebase_lab08.ResetPassword"></activity>
-        <activity android:name="com.example.firebase_lab08.PleaseTouchOne"></activity>
+        <activity android:name="com.example.firebase_lab08.Touchone"></activity>
         <activity android:name="com.example.firebase_lab08.Register"></activity>
         <activity android:name="com.example.firebase_lab08.SignIn"></activity>
         <activity android:name="com.example.firebase_lab08.MainActivity">

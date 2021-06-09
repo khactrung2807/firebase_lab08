@@ -4,55 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PleaseTouchOne">
-    <TextView
-        android:id="@+id/tvPleaseTouch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PLEASE TOUCH ONE!"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="#2D58F3"></TextView>
+    tools:context=".Touchone">
+
     <ImageView
         android:id="@+id/imagesSad"
         android:layout_width="120dp"
         android:layout_height="120dp"
+        android:layout_marginTop="52dp"
         android:src="@drawable/nin"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="70dp"></ImageView>
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
     <ImageView
         android:id="@+id/imagesHappy"
         android:layout_width="120dp"
         android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="200dp"
         android:src="@drawable/cuoi"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="130dp"
-        android:layout_marginLeft="36dp"></ImageView>
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
     <ImageView
         android:id="@+id/imagesNormal"
         android:layout_width="120dp"
         android:layout_height="120dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
         android:src="@drawable/buon"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="130dp"
-        android:layout_marginRight="36dp"></ImageView>
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
     <View
         android:id="@+id/viewTouch"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_width="402dp"
+        android:layout_height="331dp"
         android:layout_marginTop="65dp"
         android:background="@drawable/viewtop01"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imagesNormal"></View>
 
     <Button
@@ -60,7 +55,7 @@
         android:layout_width="207dp"
         android:layout_height="61dp"
         android:layout_marginLeft="200dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="272dp"
         android:layout_marginRight="200dp"
         android:background="@drawable/radius_btn"
         android:text="FINISH"
@@ -68,6 +63,7 @@
         android:textSize="18sp"
         app:backgroundTint="#EF77B0"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imagesNormal" />
 

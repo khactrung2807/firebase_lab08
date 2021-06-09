@@ -75,7 +75,7 @@ public class SignIn extends AppCompatActivity {
                                         Toast.makeText(SignIn.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
                                     }
                                 } else {
-                                    Intent intent = new Intent(SignIn.this, PleaseTouchOne.class);
+                                    Intent intent = new Intent(SignIn.this, Touchone.class);
                                     intent.putExtra("userMail",email);
                                     startActivity(intent);
                                     finish();

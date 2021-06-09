@@ -18,7 +18,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 
-public class PleaseTouchOne extends AppCompatActivity {
+public class Touchone extends AppCompatActivity {
     DatabaseReference mData;
     ImageView imageView1,imageView2,imageView3;
     ArrayList<UserFace> arrayList;
@@ -40,8 +40,8 @@ public class PleaseTouchOne extends AppCompatActivity {
                 UserFace userFace = snapshot.getValue(UserFace.class);
                 userFace.setKey(snapshot.getKey());
                 arrayList.add(userFace);
-                Toast.makeText(PleaseTouchOne.this, snapshot.getKey(), Toast.LENGTH_SHORT).show();
-                Toast.makeText(PleaseTouchOne.this, userFace.getUserMail(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(Touchone.this, snapshot.getKey(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(Touchone.this, userFace.getUserMail(), Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -69,12 +69,12 @@ public class PleaseTouchOne extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = getIntent();
                 String userMail = intent.getStringExtra("userMail");
-                Toast.makeText(PleaseTouchOne.this, userMail, Toast.LENGTH_SHORT).show();
+                Toast.makeText(Touchone.this, userMail, Toast.LENGTH_SHORT).show();
                 if(arrayList != null){
                     for (UserFace userFace: arrayList) {
                         if(userFace.getUserMail().equalsIgnoreCase(userMail)){
                             userFace.setHappy(userFace.getHappy()+1);
-                            Toast.makeText(PleaseTouchOne.this, "Happy: "+String.valueOf(userFace.getHappy()+1), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Touchone.this, "Happy: "+String.valueOf(userFace.getHappy()+1), Toast.LENGTH_SHORT).show();
                             mData.child("user").child(userFace.getKey()).setValue(userFace);
                             break;
                         }
@@ -87,12 +87,12 @@ public class PleaseTouchOne extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = getIntent();
                 String userMail = intent.getStringExtra("userMail");
-                Toast.makeText(PleaseTouchOne.this, userMail, Toast.LENGTH_SHORT).show();
+                Toast.makeText(Touchone.this, userMail, Toast.LENGTH_SHORT).show();
                 if(arrayList != null){
                     for (UserFace userFace: arrayList) {
                         if(userFace.getUserMail().equalsIgnoreCase(userMail)){
                             userFace.setNormal(userFace.getNormal()+1);
-                            Toast.makeText(PleaseTouchOne.this, "Normal: "+(userFace.getHappy()+1), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Touchone.this, "Normal: "+(userFace.getHappy()+1), Toast.LENGTH_SHORT).show();
                             mData.child("user").child(userFace.getKey()).setValue(userFace);
                             break;
                         }
@@ -105,12 +105,12 @@ public class PleaseTouchOne extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = getIntent();
                 String userMail = intent.getStringExtra("userMail");
-                Toast.makeText(PleaseTouchOne.this, userMail, Toast.LENGTH_SHORT).show();
+                Toast.makeText(Touchone.this, userMail, Toast.LENGTH_SHORT).show();
                 if(arrayList != null){
                     for (UserFace userFace: arrayList) {
                         if(userFace.getUserMail().equalsIgnoreCase(userMail)){
                             userFace.setNoHappy(userFace.getNoHappy()+1);
-                            Toast.makeText(PleaseTouchOne.this, "No Happy: "+(userFace.getHappy()+1), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Touchone.this, "No Happy: "+(userFace.getHappy()+1), Toast.LENGTH_SHORT).show();
                             mData.child("user").child(userFace.getKey()).setValue(userFace);
                             break;
                         }
